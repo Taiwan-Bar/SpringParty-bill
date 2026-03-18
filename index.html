@@ -1,0 +1,60 @@
+# SpringParty-bill
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>我的圖片展示</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>我的圖片展示</h1>
+
+  <div class="gallery">
+    <img src="images/114010201.jpg">
+    <img src="images/114010202.jpg">
+    <img src="images/114070801.jpg">
+    <img src="images/114070802.jpg">
+    <img src="images/114111201.jpg">
+    <img src="images/114111202.jpg">
+    <img src="images/115010201.jpg">
+    <img src="images/115010201.jpg">
+  </div>
+
+</body>
+</html>
